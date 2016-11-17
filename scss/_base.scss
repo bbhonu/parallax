@@ -76,7 +76,7 @@ html {
 }
 
 #group1 .base {
-  background: #644965;
+  background: rgba(100,230,170,1);
 }
 
 /* group 2 */
@@ -94,7 +94,10 @@ html {
   background: orange 50% 50% no-repeat;
   background-size: cover;
   opacity: .4;
-  // min-height: 900px;
+  transform: translateZ(100px) scale(1.3);
+  margin-top: 420px;
+  height: 300px;
+
 }
 
 /* group 3*/
@@ -142,10 +145,11 @@ html {
 .title {
   text-align: center;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 44%;
+  top: 21%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+    transform: translateZ(-150px) scale(1);
 }
 
 h1 {
@@ -169,6 +173,13 @@ p {
   transform: translateZ(100px) scale(0.6);
   position: absolute;
   z-index: 999;
+}
+
+p.second {
+  top: 50%;
+  padding-bottom: 100px;
+    transform: translateZ(100px) scale(0.6);
+
 }
 
 figure {
