@@ -1,0 +1,108 @@
+/* line 1, ../scss/_base.scss */
+body {
+  background-color: yellow;
+}
+
+/* line 6, ../scss/_base.scss */
+img {
+  overflow: hidden;
+  padding-bottom: 55%;
+  z-index: 1;
+}
+
+@media (min-width: 600px) {
+  /* line 13, ../scss/_base.scss */
+  section {
+    padding-bottom: 50%;
+  }
+}
+@media (min-width: 700px) {
+  /* line 16, ../scss/_base.scss */
+  section {
+    padding-bottom: 45%;
+  }
+}
+/* line 20, ../scss/_base.scss */
+.container {
+  max-width: 960px;
+}
+
+/* line 25, ../scss/_base.scss */
+#group2 .base {
+  background-color: red;
+  background-size: cover;
+  z-index: 99;
+}
+
+/* line 30, ../scss/_base.scss */
+.base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0) scale(1);
+  z-index: 5;
+}
+
+/* line 36, ../scss/_base.scss */
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+/* line 44, ../scss/_base.scss */
+.parallaxLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 54, ../scss/_base.scss */
+section img {
+  width: 100%;
+  max-width: none;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* line 67, ../scss/_base.scss */
+.text {
+  z-index: 100;
+  position: relative;
+  width: 100%;
+}
+
+/* line 72, ../scss/_base.scss */
+p {
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 40px;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  left: 4%;
+  bottom: 30%;
+  border-radius: 25px;
+  transform: translateZ(100px) scale(0.6);
+  position: relative;
+  z-index: 800;
+  background: rgba(0, 10, 10, 0.4);
+}
+
+/*html {
+  height: 100%;
+  overflow: hidden;
+}*/
+/* line 94, ../scss/_base.scss */
+.group2 {
+  z-index: 600;
+  height: 200px;
+  margin-bottom: 10px;
+}

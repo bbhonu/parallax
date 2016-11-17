@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<link href="css/main.css" rel="stylesheet">
+
+</head>
+<body class ="container">
+
+<section class="parallax-zoom-blur"> 
+<img src="http://lorempixel.com/output/abstract-q-c-640-480-1.jpg">
+</section>
+
+<div class="text">
+<section id="group2" class="group">
+<div class="parallaxLayer base"></div>
+
+
+
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reprehenderit provident nisi, sint voluptatibus esse soluta quis neque obcaecati molestiae, iure ex! Ipsum delectus rem modi amet, soluta, voluptatem placeat.</p>
+	</section>
+	<section id="group2" class="group">
+
+
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reprehenderit provident nisi, sint voluptatibus esse soluta quis neque obcaecati molestiae, iure ex! Ipsum delectus rem modi amet, soluta, voluptatem placeat.</p>
+	</section>
+</div>
+
+
+
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script>
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+	$(".parallax-zoom-blur img").css({
+		width: (100 + scroll/5)  + "%",
+		top: -(scroll/10)  + "%",
+		//Blur suggestion from @janwagner: http://codepen.io/janwagner/ in comments
+		// "-webkit-filter": "blur(" + (scroll/100) + "px)",
+		// filter: "blur(" + (scroll/100) + "px)"
+	});
+});
+</script>
+</body>
+
+</html>
