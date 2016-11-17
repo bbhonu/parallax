@@ -1,50 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-		<link href="css/main.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <title>parallax advanced demo</title>
+  <link href="css/main.css" rel="stylesheet">
 </head>
-<body class ="container">
+<body>
+  <main class="parallax">
+      <section id="group1" class="group">
+        <div class="parallaxLayer base"></div>
+        <header>
+          <h1 class="title">A Day in the Life of ...</h1>
+        </header>
+      </section>
 
-<section class="parallax-zoom-blur"> 
-<img src="http://lorempixel.com/output/abstract-q-c-640-480-1.jpg">
-</section>
+        <section id="group2" class="group">
+        <div class="parallaxLayer base"></div>
+        <div class="parallaxLayer base2"></div>
+        <figure> 
+        <img src= "http://placehold.it/250x250">
+        </figure>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero delectus culpa saepe, necessitatibus officiis adipisci optio totam ex reiciendis iure dolorum, assumenda magnam. Repellat dolores, cumque illum quod reiciendis incidunt.</p>
+      </section>
 
-<div class="text">
-<section id="group2" class="group">
-<div class="parallaxLayer base"></div>
-
-
-
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reprehenderit provident nisi, sint voluptatibus esse soluta quis neque obcaecati molestiae, iure ex! Ipsum delectus rem modi amet, soluta, voluptatem placeat.</p>
-	</section>
-	<section id="group2" class="group">
-
-
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reprehenderit provident nisi, sint voluptatibus esse soluta quis neque obcaecati molestiae, iure ex! Ipsum delectus rem modi amet, soluta, voluptatem placeat.</p>
-	</section>
-</div>
-
-
+    <section id="group3" class="group">
+        <div class="parallaxLayer base"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eligendi molestias, tenetur nam voluptate cum. Esse omnis deleniti explicabo nulla rem, ad excepturi culpa consectetur mollitia, vitae consequuntur pariatur aliquid.</p>
+      </section>
 
 
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script>
-$(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-	$(".parallax-zoom-blur img").css({
-		width: (100 + scroll/5)  + "%",
-		top: -(scroll/10)  + "%",
-		//Blur suggestion from @janwagner: http://codepen.io/janwagner/ in comments
-		// "-webkit-filter": "blur(" + (scroll/100) + "px)",
-		// filter: "blur(" + (scroll/100) + "px)"
-	});
-});
-</script>
+    <section id="group4" class="group">
+        <div class="parallaxLayer base"></div>
+        <div class="parallaxLayer base2"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eligendi molestias, tenetur nam voluptate cum. Esse omnis deleniti explicabo nulla rem, ad excepturi culpa consectetur mollitia, vitae consequuntur pariatur aliquid.</p>
+      </section>
+
+
+  </main>     
 </body>
-
 </html>

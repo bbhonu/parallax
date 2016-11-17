@@ -1,37 +1,19 @@
-body {
-  background-color: yellow;
+/*universal styles*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-img {
+html {
+  height: 100%;
   overflow: hidden;
-  padding-bottom: 55%;
-  z-index:1
-}
-
-@media (min-width: 600px) {
-section  { padding-bottom: 50%; }
-}
-@media (min-width: 700px) {
-section  { padding-bottom: 45%; }
 }
 
 
-.container {
-  max-width: 960px;
-
-}
-
-#group2 .base {
-  background-color: red;
-  background-size: cover;
-  z-index: 99;
-}
-.base {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0) scale(1);
-  z-index: 5;
-}
+/*parallax styles*/
 
 .parallax {
   height: 100vh;
@@ -49,50 +31,157 @@ section  { padding-bottom: 45%; }
   bottom: 0;
 }
 
-
-
-section img {
-  width: 100%;
-  max-width: none;
-  position: fixed;
-  top: 0%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  z-index:1;
-}
-
-
-.text{z-index: 100;
+.group {
   position: relative;
-  width: 100%;
+  padding: 25vh 10%;
+  min-height: 60vh;
+  width: 100vw;
+  transform-style: inherit;
+  background: 50% 50% / cover;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
 }
 
-p{
- font-size: 20px;
+.group:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: 50% 50% / cover;
+}
+
+/*base styles*/
+
+.base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0) scale(1);
+  z-index: 5;
+}
+
+.base2 {
+  -webkit-transform: translateZ(-50px) scale(1.2);
+  transform: translateZ(-50px) scale(1.2);
+  z-index: 6;
+  opacity: 50%;
+}
+
+/*group styles*/
+
+
+/* group 1 */
+#group1 {
+  z-index: 8;
+}
+
+#group1 .base {
+  background: #644965;
+}
+
+/* group 2 */
+#group2 {
+  z-index: 6;
+}
+
+#group2 .base {
+  background: blue 50% 50% no-repeat;
+  background-size: cover;
+  opacity: 50%;
+}
+
+#group2 .base2 {
+  background: orange 50% 50% no-repeat;
+  background-size: cover;
+  opacity: .4;
+  // min-height: 900px;
+}
+
+/* group 3*/
+#group3 {
+  z-index: 7; 
+}
+
+#group3 .base {
+  background: url('http://placehold.it/960x450/ff0000') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+// group 4
+
+#group4 .base {
+  background-color: black;
+  height: 700px;
+
+}
+
+#group4 .base2 {
+  background-color: white;
+  opacity: .7;
+      max-width: 288px;
+    margin-left: 500px;
+    transform: translateZ(200px) scale(.6);
+
+}
+
+#group4 p {
+    transform: translateZ(100px) scale(0.6);
+    width: 560px;
+    margin-left: 100px;
+    z-index: 6;
+    top:30%;
+
+
+
+}
+
+
+
+/*content styles*/
+
+.title {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  font-family: serif;
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+}
+
+p {
+  left: 0%;
+  font-size: 20px;
+  color: white;
   font-family: sans-serif;
   line-height: 40px;
-  color:white;
   padding: 20px;
-  width: 100%;
-  left: 4%;
-  bottom: 30%;
-  border-radius: 25px;
+  bottom: 50%;
+  background: rgba(0, 10, 10, 0.4);
   transform: translateZ(100px) scale(0.6);
-  position: relative;
-  z-index: 800;
-    background: rgba(0, 10, 10, 0.4);
-
+  position: absolute;
+  z-index: 999;
 }
 
-/*html {
-  height: 100%;
-  overflow: hidden;
-}*/
-
-.group2 {
-  z-index: 600;
-  height: 200px;
-  margin-bottom: 10px;
+figure {
+    width: 20%;
+    left: 47%;
+    bottom: 40%;
+    transform: translateZ(200px) scale(0.6);
+    position: absolute;
+    z-index: 999;
 }
+
+img {
+  width: 100%;
+}
+
+
