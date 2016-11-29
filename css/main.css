@@ -14,8 +14,12 @@ html {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: "univers";
+  src: url(../fonts/univers-extrablackobl.otf);
+}
 /*parallax styles*/
-/* line 18, ../scss/_base.scss */
+/* line 23, ../scss/_base.scss */
 .parallax {
   height: 100vh;
   overflow-x: hidden;
@@ -24,7 +28,7 @@ html {
   perspective: 300px;
 }
 
-/* line 26, ../scss/_base.scss */
+/* line 31, ../scss/_base.scss */
 .parallaxLayer {
   position: absolute;
   top: 0;
@@ -33,7 +37,7 @@ html {
   bottom: 0;
 }
 
-/* line 34, ../scss/_base.scss */
+/* line 39, ../scss/_base.scss */
 .group {
   position: relative;
   padding: 25vh 10%;
@@ -45,7 +49,7 @@ html {
   transition: transform 0.5s;
 }
 
-/* line 45, ../scss/_base.scss */
+/* line 50, ../scss/_base.scss */
 .group:before {
   content: " ";
   position: absolute;
@@ -57,14 +61,14 @@ html {
 }
 
 /*base styles*/
-/* line 57, ../scss/_base.scss */
+/* line 62, ../scss/_base.scss */
 .base {
   -webkit-transform: translateZ(0);
   transform: translateZ(0) scale(1);
   z-index: 5;
 }
 
-/* line 63, ../scss/_base.scss */
+/* line 68, ../scss/_base.scss */
 .base2 {
   -webkit-transform: translateZ(-50px) scale(1.2);
   transform: translateZ(-50px) scale(1.2);
@@ -74,58 +78,54 @@ html {
 
 /*group styles*/
 /* group 1 */
-/* line 74, ../scss/_base.scss */
+/* line 79, ../scss/_base.scss */
 #group1 {
   z-index: 8;
+  min-height: 760px;
 }
 
-/* line 78, ../scss/_base.scss */
+/* line 85, ../scss/_base.scss */
 #group1 .base {
-  background: #64e6aa;
+  background-image: url("../img/starry.jpg");
 }
 
 /* group 2 */
-/* line 83, ../scss/_base.scss */
+/* line 90, ../scss/_base.scss */
 #group2 {
   z-index: 6;
+  height: 1000px;
 }
 
-/* line 87, ../scss/_base.scss */
-#group2 .base {
-  background: blue 50% 50% no-repeat;
-  background-size: cover;
-  opacity: 50%;
-}
-
-/* line 93, ../scss/_base.scss */
+/* line 101, ../scss/_base.scss */
 #group2 .base2 {
-  background: orange 50% 50% no-repeat;
+  background-image: url("../img/sunrise.jpg");
   background-size: cover;
-  opacity: .4;
   transform: translateZ(100px) scale(1.3);
-  margin-top: 420px;
-  height: 300px;
+  height: 1500px;
 }
 
 /* group 3*/
-/* line 104, ../scss/_base.scss */
+/* line 111, ../scss/_base.scss */
 #group3 {
   z-index: 7;
+  margin-top: 700px;
 }
 
-/* line 108, ../scss/_base.scss */
+/* line 116, ../scss/_base.scss */
 #group3 .base {
-  background: url("http://placehold.it/960x450/ff0000") 50% 50% no-repeat;
+  background: 50% 50% no-repeat;
   background-size: cover;
+  margin-top: 700px;
+  background-color: #95caf3;
 }
 
-/* line 115, ../scss/_base.scss */
+/* line 126, ../scss/_base.scss */
 #group4 .base {
   background-color: black;
   height: 700px;
 }
 
-/* line 121, ../scss/_base.scss */
+/* line 132, ../scss/_base.scss */
 #group4 .base2 {
   background-color: white;
   opacity: .7;
@@ -134,7 +134,7 @@ html {
   transform: translateZ(200px) scale(0.6);
 }
 
-/* line 130, ../scss/_base.scss */
+/* line 141, ../scss/_base.scss */
 #group4 p {
   transform: translateZ(100px) scale(0.6);
   width: 560px;
@@ -144,18 +144,23 @@ html {
 }
 
 /*content styles*/
-/* line 145, ../scss/_base.scss */
+/* line 156, ../scss/_base.scss */
 .title {
   text-align: center;
-  position: absolute;
-  left: 44%;
-  top: 21%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  transform: translateZ(-150px) scale(1);
+  width: 20px;
+  left: 40%;
+  font-family: 'univers';
+  text-transform: uppercase;
+  line-height: 78px;
+  letter-spacing: -2px;
+  font-size: 100px;
+  color: #fce97a;
+  text-shadow: 1px 1px 13px #fce97a;
+  top: 10%;
+  transform: translateZ(-100px) scale(1);
 }
 
-/* line 155, ../scss/_base.scss */
+/* line 173, ../scss/_base.scss */
 h1 {
   color: white;
   font-size: 80px;
@@ -165,7 +170,7 @@ h1 {
   z-index: 999;
 }
 
-/* line 164, ../scss/_base.scss */
+/* line 182, ../scss/_base.scss */
 p {
   left: 0%;
   font-size: 20px;
@@ -180,14 +185,14 @@ p {
   z-index: 999;
 }
 
-/* line 178, ../scss/_base.scss */
+/* line 196, ../scss/_base.scss */
 p.second {
   top: 50%;
   padding-bottom: 100px;
   transform: translateZ(100px) scale(0.6);
 }
 
-/* line 185, ../scss/_base.scss */
+/* line 203, ../scss/_base.scss */
 figure {
   width: 20%;
   left: 47%;
@@ -197,7 +202,15 @@ figure {
   z-index: 999;
 }
 
-/* line 194, ../scss/_base.scss */
+/* line 212, ../scss/_base.scss */
+.sun {
+  width: 20%;
+  left: 41%;
+  bottom: -39%;
+  transform: translateZ(-50px) scale(1.7);
+}
+
+/* line 218, ../scss/_base.scss */
 img {
   width: 100%;
 }

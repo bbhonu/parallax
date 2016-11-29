@@ -12,6 +12,11 @@ html {
   overflow: hidden;
 }
 
+@font-face {
+  font-family:"univers";
+  src: url(../fonts/univers-extrablackobl.otf);
+}
+
 
 /*parallax styles*/
 
@@ -73,41 +78,47 @@ html {
 /* group 1 */
 #group1 {
   z-index: 8;
+    min-height:760px;
+
 }
 
 #group1 .base {
-  background: rgba(100,230,170,1);
+  background-image: url('../img/starry.jpg');
 }
 
 /* group 2 */
 #group2 {
   z-index: 6;
+  height:1000px;
+
 }
 
-#group2 .base {
-  background: blue 50% 50% no-repeat;
-  background-size: cover;
-  opacity: 50%;
-}
+// #group2 .base {
+//   background: blue 50% 50% no-repeat;
+//   background-size: cover;
+// }
 
 #group2 .base2 {
-  background: orange 50% 50% no-repeat;
+  background-image: url('../img/sunrise.jpg');
   background-size: cover;
-  opacity: .4;
   transform: translateZ(100px) scale(1.3);
-  margin-top: 420px;
-  height: 300px;
+  height: 1500px;
+
 
 }
 
 /* group 3*/
 #group3 {
   z-index: 7; 
+  margin-top: 700px;
 }
 
 #group3 .base {
-  background: url('http://placehold.it/960x450/ff0000') 50% 50% no-repeat;
+  background: 50% 50% no-repeat;
   background-size: cover;
+    margin-top: 700px;
+    background-color: rgba(149,202,243,1);
+
 }
 
 // group 4
@@ -144,12 +155,19 @@ html {
 
 .title {
   text-align: center;
-  position: absolute;
-  left: 44%;
-  top: 21%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-    transform: translateZ(-150px) scale(1);
+  width:20px;
+  left:40%;
+  font-family: 'univers';
+  text-transform: uppercase;
+  line-height: 78px;
+  letter-spacing: -2px;
+  font-size: 100px;
+  color: rgba(252,233,122,1);
+text-shadow: 1px 1px 13px rgba(252,233,122,1);
+  // -webkit-transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
+    top:10%;
+    transform: translateZ(-100px) scale(1);
 }
 
 h1 {
@@ -189,6 +207,12 @@ figure {
     transform: translateZ(200px) scale(0.6);
     position: absolute;
     z-index: 999;
+}
+
+ .sun {width: 20%;
+    left: 41%;
+    bottom: -39%;
+    transform: translateZ(-50px) scale(1.7);
 }
 
 img {
