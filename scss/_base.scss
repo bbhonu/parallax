@@ -21,14 +21,14 @@ html {
   src: url(../fonts/ButlerStencil-extraBold.otf);
 }
 @font-face {
-  font-family:"campton-bold";
-  src: url(../fonts/campton-bold.otf);
+  font-family:"BaronNeue";
+  src: url(../fonts/BaronNeue.otf);
 }
 
-@font-face {
-  font-family:"campton-light";
-  src: url(../fonts/campton-light.otf);
-}
+// @font-face {
+//   font-family:"campton-light";
+//   src: url(../fonts/campton-light.otf);
+// }
 
 
 
@@ -130,6 +130,7 @@ body {
 #group3 {
   z-index: 7; 
   margin-top: 700px;
+  height: 600px;
 }
 
 #group3 .base {
@@ -198,10 +199,8 @@ h1 {
 
 .first {
     font-size: 90px;
-    color: rgba(227,137,89,1);
+    color:rgba(255, 214, 87,1);
     font-family: 'Butler-Bold';
-    text-shadow: 1px 0px 4px #fce97a;
-
     line-height: 40px;
     padding: 20px;
     bottom: 23%;
@@ -217,15 +216,14 @@ h1 {
 }
 
 .second{
-     left: 30%;
-    padding: 20px;
-    bottom: -7%;
+left: 30%;
+    padding: 37px;
+    bottom: -15%;
     transform: translateZ(30px) scale(0.5);
     position: absolute;
     z-index: 999;
-    width: 500px;
-    background-color: rgba(127,52,84,.3);
-
+    width: 516px;
+    border: solid 5px white;
 
 }
 
@@ -233,7 +231,7 @@ p {
   left: 0%;
     font-size: 60px;
     color: white;
-    font-family: 'campton-light';
+    font-family: 'BaronNeue';
     line-height: 40px;
   padding: 20px;
   bottom: 50%;
@@ -248,8 +246,11 @@ p {
 
 p.third {
     transform: translateZ(-100px) scale(1);
-    font-size: 78px;
-    font-family: "campton-light";
+    font-size: 55px;
+    font-family: "BaronNeue";
+    left: 36%;
+    width:380px;
+    border: solid 5px white;
 
 
 }
@@ -265,9 +266,9 @@ position: absolute;
 }
 
  .sun {;
-left: 21%;
-    bottom: -70%;
-    transform: translateZ(-13.1px) scale(1.3);
+    left: 21%;
+    bottom: -91%;
+    transform: translateZ(-200px) scale(1.6);
 }
 
 img {
