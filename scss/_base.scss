@@ -60,14 +60,14 @@ body {
 }
 
 .group {
-  position: relative;
-  padding: 25vh 10%;
-  min-height: 60vh;
-  width: 100vw;
-  transform-style: inherit;
-  background: 50% 50% / cover;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
+      position: relative;
+    /* padding: 25vh 10%; */
+    min-height: 60vh;
+    /* width: 100vw; */
+    transform-style: inherit;
+    background: 50% 50% / cover;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
 }
 
 .group:before {
@@ -215,7 +215,9 @@ body {
   z-index: 21;
   left: 50%;
 
+
   img {
+    margin-top: 200px;
     height: 300px;
     width: auto;
   }
@@ -229,15 +231,39 @@ body {
 
 }
 
-#group4 p {
+  p.fourth{
        transform: translateZ(120px) scale(0.4);
     width: 560px;
     z-index: 23;
-    top: 100%;
+    top: 0;
+    left: 10%;
 }
 
 
+#base5 .base {
+      background-image: url(../img/clouds2.png);
+    height: 1000px;
+    transform: translateZ(150px) scale(.7);
+    /* top: 0%; */
+    z-index: 24;
+    width: 100%;
+}
 
+#group5 .base{
+  background-color: rgba(109,202,243,1);
+      transform: translateZ(150px) scale(.7);
+          transform: translateZ(136px) scale(.7);
+    bottom: -300px;
+    z-index: 30;
+
+}
+
+p.fifth {
+      transform: translateZ(-100px) scale(0.6);
+    z-index: 31;
+    bottom: -160px;
+
+}
 
 
 
@@ -256,6 +282,7 @@ body {
     color: #fce97a;
     text-shadow: 1px 1px 13px #fce97a;
     top: 5%;
+    z-index: 5;
     transform: translateZ(-163px) scale(1.2);
 }
 
@@ -269,22 +296,24 @@ h1 {
 }
 
 .first {
-    font-size: 90px;
-    color:rgba(255, 214, 87,1);
+    font-size: 115px;
+    color: #ffd657;
     font-family: 'Butler-Bold';
     line-height: 40px;
-    padding: 20px;
-    bottom: 23%;
-    transform: translateZ(100px) scale(0.5);
+    bottom: 18%;
+    transform: translateZ(170px) scale(0.4);
     position: absolute;
     z-index: 12;
     line-height: 162px;
-    margin-bottom: 107px;
-    width: 80vw;
     text-align: center;
-
-
+    left: 0;
+    right: 600;
+    margin-bottom: 112px;
+    width: 100vw;
 }
+
+
+
 
 // .line {
 //   width: 33vw;
@@ -303,16 +332,17 @@ h1 {
 }
 
 .second{
-left: 30%;
+    left: 30%;
     padding: 37px;
-    bottom: -25%;
-    transform: translateZ(30px) scale(0.5);
+    bottom: -100px;
+    font-size: 40px;
+    transform: translateZ(95px) scale(.8);
     position: absolute;
     z-index: 13;
     width: 44vw;
-    border: solid 5px white;
+    /* margin-top: 500px; */
     text-align: center;
-
+    /* top: 100%; */
 }
 
 p {
@@ -332,18 +362,21 @@ p {
 
 
 p.third {
-    transform: translateZ(-100px) scale(1);
-    font-size: 55px;
+    transform: translateZ(1px) scale(1);
+    font-size: 46px;
     font-family: "BaronNeue";
     text-align: center;
-
+    border: solid white;
+    border-width: 5px 0px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: 220px;
+    margin-bottom: 200px;
+background-color: rgba(255, 255, 176, 0.8);
 }
 
-p.fourth {
-  margin-top: 100px;
-      left: 35%;
-    top: 63%;
-}
+
 figure {
 position: absolute;
     z-index: 12;

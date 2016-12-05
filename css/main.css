@@ -58,9 +58,9 @@ body {
 /* line 62, ../scss/_base.scss */
 .group {
   position: relative;
-  padding: 25vh 10%;
+  /* padding: 25vh 10%; */
   min-height: 60vh;
-  width: 100vw;
+  /* width: 100vw; */
   transform-style: inherit;
   background: 50% 50% / cover;
   -webkit-transition: -webkit-transform 0.5s;
@@ -200,13 +200,14 @@ body {
   z-index: 21;
   left: 50%;
 }
-/* line 218, ../scss/_base.scss */
+/* line 219, ../scss/_base.scss */
 .sun2 img {
+  margin-top: 200px;
   height: 300px;
   width: auto;
 }
 
-/* line 224, ../scss/_base.scss */
+/* line 226, ../scss/_base.scss */
 #group4 .base2 {
   background-color: #95caf3;
   opacity: .7;
@@ -214,16 +215,43 @@ body {
   margin-left: 500px;
 }
 
-/* line 232, ../scss/_base.scss */
-#group4 p {
+/* line 234, ../scss/_base.scss */
+p.fourth {
   transform: translateZ(120px) scale(0.4);
   width: 560px;
   z-index: 23;
-  top: 100%;
+  top: 0;
+  left: 10%;
+}
+
+/* line 243, ../scss/_base.scss */
+#base5 .base {
+  background-image: url(../img/clouds2.png);
+  height: 1000px;
+  transform: translateZ(150px) scale(0.7);
+  /* top: 0%; */
+  z-index: 24;
+  width: 100%;
+}
+
+/* line 252, ../scss/_base.scss */
+#group5 .base {
+  background-color: #6dcaf3;
+  transform: translateZ(150px) scale(0.7);
+  transform: translateZ(136px) scale(0.7);
+  bottom: -300px;
+  z-index: 30;
+}
+
+/* line 261, ../scss/_base.scss */
+p.fifth {
+  transform: translateZ(-100px) scale(0.6);
+  z-index: 31;
+  bottom: -160px;
 }
 
 /*content styles*/
-/* line 247, ../scss/_base.scss */
+/* line 273, ../scss/_base.scss */
 .title {
   text-align: center;
   width: 20px;
@@ -236,10 +264,11 @@ body {
   color: #fce97a;
   text-shadow: 1px 1px 13px #fce97a;
   top: 5%;
+  z-index: 5;
   transform: translateZ(-163px) scale(1.2);
 }
 
-/* line 262, ../scss/_base.scss */
+/* line 289, ../scss/_base.scss */
 h1 {
   color: white;
   font-size: 100px;
@@ -249,47 +278,50 @@ h1 {
   z-index: 40;
 }
 
-/* line 271, ../scss/_base.scss */
+/* line 298, ../scss/_base.scss */
 .first {
-  font-size: 90px;
+  font-size: 115px;
   color: #ffd657;
   font-family: 'Butler-Bold';
   line-height: 40px;
-  padding: 20px;
-  bottom: 23%;
-  transform: translateZ(100px) scale(0.5);
+  bottom: 18%;
+  transform: translateZ(170px) scale(0.4);
   position: absolute;
   z-index: 12;
   line-height: 162px;
-  margin-bottom: 107px;
-  width: 80vw;
   text-align: center;
+  left: 0;
+  right: 600;
+  margin-bottom: 112px;
+  width: 100vw;
 }
 
-/* line 297, ../scss/_base.scss */
+/* line 326, ../scss/_base.scss */
 #left {
   float: left;
 }
 
-/* line 301, ../scss/_base.scss */
+/* line 330, ../scss/_base.scss */
 #right {
   float: right;
 }
 
-/* line 305, ../scss/_base.scss */
+/* line 334, ../scss/_base.scss */
 .second {
   left: 30%;
   padding: 37px;
-  bottom: -25%;
-  transform: translateZ(30px) scale(0.5);
+  bottom: -100px;
+  font-size: 40px;
+  transform: translateZ(95px) scale(0.8);
   position: absolute;
   z-index: 13;
   width: 44vw;
-  border: solid 5px white;
+  /* margin-top: 500px; */
   text-align: center;
+  /* top: 100%; */
 }
 
-/* line 318, ../scss/_base.scss */
+/* line 348, ../scss/_base.scss */
 p {
   font-size: 60px;
   color: white;
@@ -305,35 +337,36 @@ p {
   text-align: center;
 }
 
-/* line 334, ../scss/_base.scss */
+/* line 364, ../scss/_base.scss */
 p.third {
-  transform: translateZ(-100px) scale(1);
-  font-size: 55px;
+  transform: translateZ(1px) scale(1);
+  font-size: 46px;
   font-family: "BaronNeue";
   text-align: center;
+  border: solid white;
+  border-width: 5px 0px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  bottom: 220px;
+  margin-bottom: 200px;
+  background-color: rgba(255, 255, 176, 0.8);
 }
 
-/* line 342, ../scss/_base.scss */
-p.fourth {
-  margin-top: 100px;
-  left: 35%;
-  top: 63%;
-}
-
-/* line 347, ../scss/_base.scss */
+/* line 380, ../scss/_base.scss */
 figure {
   position: absolute;
   z-index: 12;
 }
 
-/* line 352, ../scss/_base.scss */
+/* line 385, ../scss/_base.scss */
 .sun {
   left: 21%;
   bottom: -91%;
   transform: translateZ(-200px) scale(1.6);
 }
 
-/* line 358, ../scss/_base.scss */
+/* line 391, ../scss/_base.scss */
 img {
   width: 100%;
   opacity: 50%;
