@@ -159,36 +159,37 @@ body {
 
 
 
-.lineleft {
-  width: 33vh;
-  height: 7px;
-  background-color: white;
-      transform: translateZ(30px) scale(0.5);
-    position: absolute;
-    z-index: 13;
-    float: left;
-}
+// .lineleft {
+//   width: 33vh;
+//   height: 7px;
+//   background-color: white;
+//       transform: translateZ(30px) scale(0.5);
+//     position: absolute;
+//     z-index: 13;
+//     float: left;
+// }
 
-.lineright {
+// .lineright {
 
-    width: 33vh;
-  height: 7px;
-  background-color: white;
-      transform: translateZ(30px) scale(0.5);
-    position: absolute;
-    z-index: 13;
-    float: right;
+//     width: 33vh;
+//   height: 7px;
+//   background-color: white;
+//       transform: translateZ(30px) scale(0.5);
+//     position: absolute;
+//     z-index: 13;
+//     float: right;
 
-}
+// }
 
 
 
 .line {
     width: 100%;
     height: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     /* margin-top: -20px; */
     transform: translateZ(80px) scale(1);
+    background-color: rgba(255,255,255,1);
     z-index: 20;
   }
 
@@ -196,18 +197,22 @@ body {
 
 
   #one {
-        background-color: rgba(197,85,89,1);
+        
   }
 
     #two {
-        background-color: rgba(250,157,100,1);
+        
+        height: 7px;
+        opacity: .7;
 
 
 
   }
 
   #three {
-        background-color: rgba(250,214,82,1);
+        
+        height: 4px;
+        opacity: .4;
 
 
   }
@@ -255,15 +260,39 @@ body {
           transform: translateZ(136px) scale(.7);
     bottom: -300px;
     z-index: 30;
+        margin-bottom: 293px;
 
 }
 
 p.fifth {
-      transform: translateZ(-100px) scale(0.6);
+    transform: translateZ(-100px) scale(0.8);
     z-index: 31;
-    bottom: -160px;
+    bottom: 0px;
+    line-height: 100px;
+    top: 300px;
 
 }
+
+#group6 {
+  margin-bottom: 400px;
+}
+
+#group6 .base {
+  background-image: url('../img/sunset.png');
+  background-size: cover;
+  transform: translateZ(100px) scale(1.3);
+  height: 1500px;
+  margin-bottom: 300px;
+
+
+}
+
+// #group7 .base {
+//   background-image: url('../img/starry.jpg');
+//   -webkit-transform: rotate(180deg);
+//     transform: translateZ(100px) scale(1.3);
+
+// }
 
 
 
@@ -373,7 +402,7 @@ p.third {
     padding-bottom: 5px;
     bottom: 220px;
     margin-bottom: 200px;
-background-color: rgba(255, 255, 176, 0.8);
+background-color: rgba(149, 202, 243, 0.3);
 }
 
 
