@@ -35,6 +35,10 @@ html {
 
 /*parallax styles*/
 
+.container {
+  max-width: 100vw;
+
+}
 body {
   background-color: rgba(149,202,243,1);
 }
@@ -144,9 +148,23 @@ body {
 // group 4
 
 #group4 .base {
-  background-color: black;
-  height: 700px;
+background-color: black;
+    height: 1000px;
+    transform: translateZ(201px) scale(0.75);
+    top: 38%;
+    opacity: .8;
+    z-index: 600;
 
+}
+
+.sun2 {
+  z-index: 700;
+  left: 50%;
+
+  img {
+    height: 300px;
+    width: auto;
+  }
 }
 
 #group4 .base2 {
@@ -154,20 +172,19 @@ body {
   opacity: .7;
       max-width: 288px;
     margin-left: 500px;
-    transform: translateZ(200px) scale(.6);
 
 }
 
 #group4 p {
-    transform: translateZ(100px) scale(0.6);
+    transform: translateZ(76px) scale(0.6);
     width: 560px;
-    margin-left: 100px;
-    z-index: 6;
-    top:30%;
-
-
-
+    z-index: 800;
+    top: 50%;
 }
+
+
+
+
 
 
 
@@ -209,26 +226,42 @@ h1 {
     z-index: 999;
     line-height: 162px;
     margin-bottom: 107px;
-    width: 100%;
+    width: 80vw;
     text-align: center;
 
 
 }
 
+.line {
+  width: 33vw;
+  height: 7px;
+  background-color: white;
+  margin-top: 600px;
+  color: white;
+}
+
+#left {
+  float: left;
+}
+
+#right {
+  float: right;
+}
+
 .second{
 left: 30%;
     padding: 37px;
-    bottom: -15%;
+    bottom: -25%;
     transform: translateZ(30px) scale(0.5);
     position: absolute;
     z-index: 999;
-    width: 516px;
+    width: 44vw;
     border: solid 5px white;
+    text-align: center;
 
 }
 
 p {
-  left: 0%;
     font-size: 60px;
     color: white;
     font-family: 'BaronNeue';
@@ -248,10 +281,7 @@ p.third {
     transform: translateZ(-100px) scale(1);
     font-size: 55px;
     font-family: "BaronNeue";
-    left: 36%;
-    width:380px;
-    border: solid 5px white;
-
+    text-align: center;
 
 }
 
@@ -275,5 +305,4 @@ img {
   width: 100%;
   opacity: 50%;
 }
-
 
