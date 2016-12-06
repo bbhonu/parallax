@@ -185,11 +185,12 @@ body {
 
 .line {
     width: 100%;
-    height: 10px;
-    margin-bottom: 50px;
+    height: 1px;
+    margin-bottom: 41px;
     /* margin-top: -20px; */
     transform: translateZ(80px) scale(1);
-    background-color: rgba(255,255,255,1);
+    background-color: white;
+    box-shadow: 1px 0px 12px #fce97a;
     z-index: 20;
   }
 
@@ -255,26 +256,27 @@ p.fifth {
     text-align: center;
     /* left: 86px; */
     width: 100vw;
-    border: solid 0px #ffd657;
+    border: solid 0px rgba(255, 255, 255, 0.85);
     padding: 9px 2px;
-    border-bottom-width: 6px;
+    box-shadow: 31px 8px 8px rgba(252, 233, 122, 0.33);
+    border-bottom-width: 1px;
 
 }
 
 p.sixth {
     transform: translateZ(100px) scale(0.7);
     z-index: 31;
-    bottom: 0px;
+    bottom: 3px;
     line-height: 86px;
-    top: 87px;
+    top: -50px;
     width: 100vw;
     font-size: 59px;
-    /* left: 11%; */
     text-align: center;
-    text-shadow: 4px 3px 9px #ce005d;
-    padding: 300px;
+    text-shadow: 4px 3px 9px rgba(206, 0, 93, 0.72);
+    padding: 500px 300px;
+    border: double 0px white;
+    border-bottom-width: 4px;
 }
-
 #group6 {
   z-index: 29;
 }
@@ -295,7 +297,7 @@ p.sixth {
 
 p.seventh {
     font-size: 60px;
-    top: 900px;
+    top: 785px;
     transform: translateZ(-250px) scale(1.2);
     width: 46vw;
     margin-left: 700px;
@@ -309,11 +311,11 @@ p.seventh {
 
 
 #group7 .base {
-       background-image: url(../img/starry2.png);
+    background-image: url(../img/starry2.png);
     z-index: 32;
-    height: 850px;
-    top: 600px;
-    transform: translateZ(157px) scale(.6);
+    height: 1500px;
+    top: 521px;
+    transform: translateZ(157px) scale(0.6);
 }
 
 
@@ -327,10 +329,16 @@ p.seventh {
 }
 
 p.eighth {
-    top: 260%;
+    top: 281%;
+    font-size: 40px;
     z-index: 35;
-    transform: translateZ(-10px) scale(.75);
+    transform: translateZ(-113px) scale(1.3);
+    text-shadow: 1px 1px 13px #5e48ad;
+    width: 83vw;
+    text-align: center;
+    left: 65px;
 }
+
 
 #group8 .base {
     height: 500px;
@@ -340,7 +348,7 @@ p.eighth {
   }
 
   p.ninth {
-    top: 149%;
+    top: 188%;
     font-size: 115px;
     color: #ffd657;
     font-family: 'Butler-Bold';
@@ -393,10 +401,10 @@ h1 {
 
 .first {
     font-size: 115px;
-    color: #ffd657;
+    color:rgba(255, 255, 255,.85);
     font-family: 'Butler-Bold';
     line-height: 40px;
-    bottom: 18%;
+    bottom: 30%;
     transform: translateZ(170px) scale(0.4);
     position: absolute;
     z-index: 12;
@@ -428,17 +436,22 @@ h1 {
 }
 
 .second{
-    left: 30%;
     padding: 37px;
-    bottom: -100px;
-    font-size: 40px;
-    transform: translateZ(95px) scale(.8);
+    bottom: -50px;
+    font-size: 32px;
+    transform: translateZ(95px) scale(0.8);
     position: absolute;
     z-index: 13;
-    width: 39vw;
-    /* margin-top: 500px; */
+    width: 100vw;
     text-align: center;
-    /* top: 100%; */
+    border: double 00px;
+    border-top-width: 4px;
+    border-bottom-color: #ec7962;
+    padding: 25px 54px;
+    line-height: 47px;
+    padding-right: 403px;
+    padding-left: 400px;
+    background-color: rgba(255, 214, 87, 0.4);
 }
 
 p {
@@ -462,14 +475,13 @@ p.third {
     font-size: 46px;
     font-family: "BaronNeue";
     text-align: center;
-    border: solid white;
     border-width: 5px 0px;
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
     bottom: 220px;
     margin-bottom: 200px;
-background-color: rgba(149, 202, 243, 0.3);
+    text-shadow: 4px 3px 9px rgba(31, 140, 224, 0.77);
 }
 
 
