@@ -159,31 +159,19 @@ body {
   z-index: 20;
 }
 
-/* line 203, ../scss/_base.scss */
-#two {
-  height: 7px;
-  opacity: .7;
-}
-
-/* line 212, ../scss/_base.scss */
-#three {
-  height: 4px;
-  opacity: .4;
-}
-
-/* line 219, ../scss/_base.scss */
+/* line 200, ../scss/_base.scss */
 .sun2 {
   z-index: 21;
   left: 50%;
 }
-/* line 224, ../scss/_base.scss */
+/* line 205, ../scss/_base.scss */
 .sun2 img {
   margin-top: 200px;
   height: 300px;
   width: auto;
 }
 
-/* line 231, ../scss/_base.scss */
+/* line 212, ../scss/_base.scss */
 #group4 .base2 {
   background-color: #95caf3;
   opacity: .7;
@@ -191,7 +179,7 @@ body {
   margin-left: 500px;
 }
 
-/* line 239, ../scss/_base.scss */
+/* line 220, ../scss/_base.scss */
 p.fourth {
   transform: translateZ(120px) scale(0.4);
   width: 560px;
@@ -200,7 +188,7 @@ p.fourth {
   left: 10%;
 }
 
-/* line 248, ../scss/_base.scss */
+/* line 229, ../scss/_base.scss */
 #base5 .base {
   background-image: url(../img/clouds2.png);
   height: 1000px;
@@ -210,41 +198,130 @@ p.fourth {
   width: 100%;
 }
 
-/* line 257, ../scss/_base.scss */
+/* line 238, ../scss/_base.scss */
 #group5 .base {
   background-color: #6dcaf3;
   transform: translateZ(150px) scale(0.7);
   transform: translateZ(136px) scale(0.7);
-  bottom: -300px;
-  z-index: 30;
+  top: 44%;
+  z-index: 25;
   margin-bottom: 293px;
 }
 
-/* line 267, ../scss/_base.scss */
+/* line 248, ../scss/_base.scss */
 p.fifth {
-  transform: translateZ(-100px) scale(0.8);
+  transform: translateZ(143px) scale(0.6);
+  z-index: 31;
+  bottom: 160px;
+  font-size: 25px;
+  line-height: 100px;
+  /* top: 15px; */
+  text-align: center;
+  /* left: 86px; */
+  width: 100vw;
+  border: solid 0px #ffd657;
+  padding: 9px 2px;
+  border-bottom-width: 6px;
+}
+
+/* line 264, ../scss/_base.scss */
+p.sixth {
+  transform: translateZ(100px) scale(0.7);
   z-index: 31;
   bottom: 0px;
-  line-height: 100px;
-  top: 300px;
+  line-height: 86px;
+  top: 87px;
+  width: 100vw;
+  font-size: 59px;
+  /* left: 11%; */
+  text-align: center;
+  text-shadow: 4px 3px 9px #ce005d;
+  padding: 300px;
 }
 
-/* line 276, ../scss/_base.scss */
+/* line 278, ../scss/_base.scss */
 #group6 {
-  margin-bottom: 400px;
+  z-index: 29;
 }
 
-/* line 280, ../scss/_base.scss */
+/* line 282, ../scss/_base.scss */
 #group6 .base {
   background-image: url("../img/sunset.png");
   background-size: cover;
   transform: translateZ(100px) scale(1.3);
   height: 1500px;
-  margin-bottom: 300px;
+}
+
+/* line 289, ../scss/_base.scss */
+.sun3 {
+  z-index: 31;
+  top: 800px;
+  left: -100px;
+  transform: translateZ(-220px) scale(1.2);
+}
+
+/* line 296, ../scss/_base.scss */
+p.seventh {
+  font-size: 60px;
+  top: 900px;
+  transform: translateZ(-250px) scale(1.2);
+  width: 46vw;
+  margin-left: 700px;
+  text-align: center;
+  z-index: 35;
+}
+
+/* line 311, ../scss/_base.scss */
+#group7 .base {
+  background-image: url(../img/starry2.png);
+  z-index: 32;
+  height: 850px;
+  top: 600px;
+  transform: translateZ(157px) scale(0.6);
+}
+
+/* line 320, ../scss/_base.scss */
+.moon {
+  margin-top: 620px;
+  z-index: 33;
+  transform: translateZ(100px) scale(0.5);
+  width: 610px;
+  left: 13vw;
+}
+
+/* line 329, ../scss/_base.scss */
+p.eighth {
+  top: 260%;
+  z-index: 35;
+  transform: translateZ(-10px) scale(0.75);
+}
+
+/* line 335, ../scss/_base.scss */
+#group8 .base {
+  height: 500px;
+  background-color: #0e032e;
+  z-index: 32;
+  top: 139%;
+}
+
+/* line 342, ../scss/_base.scss */
+p.ninth {
+  top: 149%;
+  font-size: 115px;
+  color: #ffd657;
+  font-family: 'Butler-Bold';
+  line-height: 40px;
+  z-index: 36;
+  text-align: center;
+  width: 100vw;
+  text-shadow: 1px 1px 13px #fce97a;
+  background-color: #0e032e;
+  padding-bottom: 200px;
+  transform: translateZ(200px) scale(0.4);
 }
 
 /*content styles*/
-/* line 302, ../scss/_base.scss */
+/* line 369, ../scss/_base.scss */
 .title {
   text-align: center;
   width: 20px;
@@ -261,7 +338,7 @@ p.fifth {
   transform: translateZ(-163px) scale(1.2);
 }
 
-/* line 318, ../scss/_base.scss */
+/* line 385, ../scss/_base.scss */
 h1 {
   color: white;
   font-size: 100px;
@@ -271,7 +348,7 @@ h1 {
   z-index: 40;
 }
 
-/* line 327, ../scss/_base.scss */
+/* line 394, ../scss/_base.scss */
 .first {
   font-size: 115px;
   color: #ffd657;
@@ -289,17 +366,17 @@ h1 {
   width: 100vw;
 }
 
-/* line 355, ../scss/_base.scss */
+/* line 422, ../scss/_base.scss */
 #left {
   float: left;
 }
 
-/* line 359, ../scss/_base.scss */
+/* line 426, ../scss/_base.scss */
 #right {
   float: right;
 }
 
-/* line 363, ../scss/_base.scss */
+/* line 430, ../scss/_base.scss */
 .second {
   left: 30%;
   padding: 37px;
@@ -308,13 +385,13 @@ h1 {
   transform: translateZ(95px) scale(0.8);
   position: absolute;
   z-index: 13;
-  width: 44vw;
+  width: 39vw;
   /* margin-top: 500px; */
   text-align: center;
   /* top: 100%; */
 }
 
-/* line 377, ../scss/_base.scss */
+/* line 444, ../scss/_base.scss */
 p {
   font-size: 60px;
   color: white;
@@ -330,7 +407,7 @@ p {
   text-align: center;
 }
 
-/* line 393, ../scss/_base.scss */
+/* line 460, ../scss/_base.scss */
 p.third {
   transform: translateZ(1px) scale(1);
   font-size: 46px;
@@ -346,20 +423,21 @@ p.third {
   background-color: rgba(149, 202, 243, 0.3);
 }
 
-/* line 409, ../scss/_base.scss */
+/* line 476, ../scss/_base.scss */
 figure {
   position: absolute;
-  z-index: 12;
+  z-index: 31;
 }
 
-/* line 414, ../scss/_base.scss */
+/* line 482, ../scss/_base.scss */
 .sun {
   left: 21%;
   bottom: -91%;
+  z-index: 12;
   transform: translateZ(-200px) scale(1.6);
 }
 
-/* line 420, ../scss/_base.scss */
+/* line 489, ../scss/_base.scss */
 img {
   width: 100%;
   opacity: 50%;

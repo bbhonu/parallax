@@ -196,26 +196,7 @@ body {
 
 
 
-  #one {
-        
-  }
-
-    #two {
-        
-        height: 7px;
-        opacity: .7;
-
-
-
-  }
-
-  #three {
-        
-        height: 4px;
-        opacity: .4;
-
-
-  }
+  
 .sun2 {
   z-index: 21;
   left: 50%;
@@ -258,23 +239,44 @@ body {
   background-color: rgba(109,202,243,1);
       transform: translateZ(150px) scale(.7);
           transform: translateZ(136px) scale(.7);
-    bottom: -300px;
-    z-index: 30;
+    top: 44%;
+    z-index: 25;
         margin-bottom: 293px;
 
 }
 
 p.fifth {
-    transform: translateZ(-100px) scale(0.8);
+    transform: translateZ(143px) scale(0.6);
     z-index: 31;
-    bottom: 0px;
+    bottom: 160px;
+    font-size: 25px;
     line-height: 100px;
-    top: 300px;
+    /* top: 15px; */
+    text-align: center;
+    /* left: 86px; */
+    width: 100vw;
+    border: solid 0px #ffd657;
+    padding: 9px 2px;
+    border-bottom-width: 6px;
 
 }
 
+p.sixth {
+    transform: translateZ(100px) scale(0.7);
+    z-index: 31;
+    bottom: 0px;
+    line-height: 86px;
+    top: 87px;
+    width: 100vw;
+    font-size: 59px;
+    /* left: 11%; */
+    text-align: center;
+    text-shadow: 4px 3px 9px #ce005d;
+    padding: 300px;
+}
+
 #group6 {
-  margin-bottom: 400px;
+  z-index: 29;
 }
 
 #group6 .base {
@@ -282,10 +284,75 @@ p.fifth {
   background-size: cover;
   transform: translateZ(100px) scale(1.3);
   height: 1500px;
-  margin-bottom: 300px;
+}
 
+.sun3 {
+    z-index: 31;
+    top: 800px;
+    left: -100px;
+    transform: translateZ(-220px) scale(1.2);
+}
+
+p.seventh {
+    font-size: 60px;
+    top: 900px;
+    transform: translateZ(-250px) scale(1.2);
+    width: 46vw;
+    margin-left: 700px;
+    text-align: center;
+    z-index: 35;
+  }
+
+
+
+
+
+
+#group7 .base {
+       background-image: url(../img/starry2.png);
+    z-index: 32;
+    height: 850px;
+    top: 600px;
+    transform: translateZ(157px) scale(.6);
+}
+
+
+.moon {
+    margin-top: 620px;
+    z-index: 33;
+    transform: translateZ(100px) scale(.5);
+    width: 610px;
+    left: 13vw;
 
 }
+
+p.eighth {
+    top: 260%;
+    z-index: 35;
+    transform: translateZ(-10px) scale(.75);
+}
+
+#group8 .base {
+    height: 500px;
+    background-color: #0e032e;
+    z-index: 32;
+    top: 139%;
+  }
+
+  p.ninth {
+    top: 149%;
+    font-size: 115px;
+    color: #ffd657;
+    font-family: 'Butler-Bold';
+    line-height: 40px;
+    z-index: 36;
+    text-align: center;
+    width: 100vw;
+    text-shadow: 1px 1px 13px #fce97a;
+    background-color: #0e032e;
+    padding-bottom: 200px;
+    transform: translateZ(200px) scale(0.4);
+  }
 
 // #group7 .base {
 //   background-image: url('../img/starry.jpg');
@@ -368,7 +435,7 @@ h1 {
     transform: translateZ(95px) scale(.8);
     position: absolute;
     z-index: 13;
-    width: 44vw;
+    width: 39vw;
     /* margin-top: 500px; */
     text-align: center;
     /* top: 100%; */
@@ -408,12 +475,14 @@ background-color: rgba(149, 202, 243, 0.3);
 
 figure {
 position: absolute;
-    z-index: 12;
+z-index: 31;
+
 }
 
  .sun {;
     left: 21%;
     bottom: -91%;
+    z-index: 12;
     transform: translateZ(-200px) scale(1.6);
 }
 
